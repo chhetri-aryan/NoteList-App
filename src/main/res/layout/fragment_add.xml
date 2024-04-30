@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blue_light"
+        tools:context=".NewNoteFragment"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"
+            android:backgroundTint="@color/white"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/addNoteHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="27dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/add_note"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                android:id="@+id/addNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/enter_the_title"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/border"
+                android:layout_marginTop="16dp"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+                android:autofillHints="text" />
+
+                <EditText
+                    android:id="@+id/addNoteDesc"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:autofillHints="fd"
+                    android:background="@drawable/border"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top"
+                    android:hint="@string/enter_the_description"
+                    android:padding="12dp"
+                    android:textSize="18sp"
+                    android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
